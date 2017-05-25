@@ -33,6 +33,7 @@ class Myaccount_validation extends CI_Controller
  
  function check_database($password)
  {
+   $session_data = $this->session->userdata('logged_in');
    //Field validation succeeded.  Validate against database
    $username = $session_data['userName'];
    //query the database
