@@ -34,7 +34,7 @@ class Myaccount_validation extends CI_Controller
  function check_database($password)
  {
    //Field validation succeeded.  Validate against database
-   
+   $username = $session_data['userName'];
    //query the database
    $result = $this->update_model->checkpassword($username, $password);
 
