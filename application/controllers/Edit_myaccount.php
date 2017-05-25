@@ -15,6 +15,7 @@ class Edit_myaccount extends CI_Controller
 	$data['username'] = $session_data['userName'];
 	$data['userid'] = $session_data['userID'];
 	$data['auth'] = $session_data['auth'];
+	$this->load->library('form_validation');
 
    	if($this->session->userdata('logged_in')){
 		$this->load->library('form_validation');
